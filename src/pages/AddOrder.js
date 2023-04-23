@@ -29,7 +29,7 @@ const AddOrder = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8083/orders', order);
+            const response = await axios.post('https://orderserviceapplication-production.up.railway.app/orders', order);
             console.log('Order added, ID:', response.data);
             alert(`Order added successfully, ID: ${response.data}`);
         } catch (error) {

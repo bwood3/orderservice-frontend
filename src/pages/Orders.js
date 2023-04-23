@@ -7,7 +7,7 @@ const Orders = () => {
 
     const fetchOrders = async () => {
         try {
-            const response = await axios.get(`http://localhost:8083/orders/${customerId}`);
+            const response = await axios.get(`https://orderserviceapplication-production.up.railway.app/orders/${customerId}`);
             setOrders(response.data);
         } catch (error) {
             console.error('Error fetching orders:', error);
